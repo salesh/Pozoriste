@@ -117,6 +117,20 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="MyToolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="upit1.ToolTip" xml:space="preserve">
+    <value>Prikazuje prezime i ime svakog glumca, kao i naziv sezone u kojoj je igrao Kir Dimu u predstavi Kir Janja.
+Rezultat sortiran u rastucem redosledu po nazivu sezone i opadajucem redosledu po prezimenu glumca.</value>
+  </data>
+  <data name="upit3.ToolTip" xml:space="preserve">
+    <value>Kreira pogled kojim se za svakog glumca prikazuju sifra, prezime, ime, broj predstava u
+cijim postavama je bio u sezoni 2008/2009 i broj predstava  u cijim postavama je bio u sezoni 2009/2010. 
+Uslov - ucesce glumca u vise od 20 razlicitih predstava kod kojih je 
+broj komedija u cijim postavama su bili u sezoni 2009/2010 veci od broja komedija 
+u cijim postavama su bili u sezoni 2008/2009.</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

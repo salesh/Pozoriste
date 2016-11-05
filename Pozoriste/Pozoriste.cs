@@ -17,17 +17,15 @@ namespace Pozoriste
             InitializeComponent();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void upit1_Click(object sender, EventArgs e)
         {
 
         }
-
         private void upit2_Click(object sender, EventArgs e)
         {
 
         }
-
-        private void upit1_Click(object sender, EventArgs e)
+        private void upit3_Click(object sender, EventArgs e)
         {
 
         }

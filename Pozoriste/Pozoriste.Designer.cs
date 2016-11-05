@@ -28,11 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pozoriste));
             this.textLabel = new System.Windows.Forms.Label();
             this.upit1 = new System.Windows.Forms.Button();
             this.upit2 = new System.Windows.Forms.Button();
             this.upit3 = new System.Windows.Forms.Button();
+            this.MyToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // textLabel
@@ -54,6 +56,7 @@
             this.upit1.Size = new System.Drawing.Size(119, 52);
             this.upit1.TabIndex = 1;
             this.upit1.Text = "Upit 1";
+            this.MyToolTip.SetToolTip(this.upit1, resources.GetString("upit1.ToolTip"));
             this.upit1.UseVisualStyleBackColor = true;
             this.upit1.Click += new System.EventHandler(this.upit1_Click);
             // 
@@ -64,6 +67,8 @@
             this.upit2.Size = new System.Drawing.Size(119, 52);
             this.upit2.TabIndex = 2;
             this.upit2.Text = "Upit 2";
+            this.MyToolTip.SetToolTip(this.upit2, "Prikazuje sifru i naziv predstave koja se u tekucoj godini \r\nnajvise puta nalazi " +
+        "na repertoaru.  ");
             this.upit2.UseVisualStyleBackColor = true;
             this.upit2.Click += new System.EventHandler(this.upit2_Click);
             // 
@@ -74,8 +79,15 @@
             this.upit3.Size = new System.Drawing.Size(119, 52);
             this.upit3.TabIndex = 3;
             this.upit3.Text = "Upit 3";
+            this.MyToolTip.SetToolTip(this.upit3, resources.GetString("upit3.ToolTip"));
             this.upit3.UseVisualStyleBackColor = true;
-            this.upit3.Click += new System.EventHandler(this.button3_Click);
+            this.upit3.Click += new System.EventHandler(this.upit3_Click);
+            // 
+            // MyToolTip
+            // 
+            this.MyToolTip.AutoPopDelay = 30000;
+            this.MyToolTip.InitialDelay = 0;
+            this.MyToolTip.IsBalloon = true;
             // 
             // Pozoriste
             // 
@@ -101,6 +113,7 @@
         private System.Windows.Forms.Button upit1;
         private System.Windows.Forms.Button upit2;
         private System.Windows.Forms.Button upit3;
+        private System.Windows.Forms.ToolTip MyToolTip;
     }
 }
 
