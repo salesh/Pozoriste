@@ -44,11 +44,24 @@ namespace Pozoriste
         }
         private void upit2_Click(object sender, EventArgs e)
         {
-            Button clickedButton2 = (Button)sender;
+            string commandText = "select TOP 1 rep.PREDID, pre.NAZIV " +
+                                 "from REPERTOAR rep join PREDSTAVA pre " +
+                                 "on rep.PREDID = pre.PREDID " +
+                                 "where year(rep.DATUMIVREME) = year(getdate()) " +
+                                 "group by rep.PREDID, pre.NAZIV " +
+                                 "order by count(*) desc";
+            using (connection = new SqlConnection(connectionString))
+            using (SqlDataAdapter adapter = new SqlDataAdapter(commandText,connection))
+            {
+                DataTable tableOwn = new DataTable();
+                adapter.Fill(tableOwn);
+                dataGridView1.DataSource = tableOwn;
+                connection.Close();
+            }
         }
         private void upit3_Click(object sender, EventArgs e)
         {
-            Button clickedButton3 = (Button)sender;
+            
         }
     }
 }
