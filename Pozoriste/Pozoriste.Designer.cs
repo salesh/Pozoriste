@@ -44,7 +44,7 @@
             this.textLabel.BackColor = System.Drawing.Color.Transparent;
             this.textLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textLabel.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.textLabel.Location = new System.Drawing.Point(192, 73);
+            this.textLabel.Location = new System.Drawing.Point(180, 75);
             this.textLabel.Name = "textLabel";
             this.textLabel.Size = new System.Drawing.Size(200, 50);
             this.textLabel.TabIndex = 0;
@@ -53,7 +53,7 @@
             // 
             // upit1
             // 
-            this.upit1.Location = new System.Drawing.Point(53, 162);
+            this.upit1.Location = new System.Drawing.Point(39, 174);
             this.upit1.Name = "upit1";
             this.upit1.Size = new System.Drawing.Size(119, 52);
             this.upit1.TabIndex = 1;
@@ -64,7 +64,7 @@
             // 
             // upit2
             // 
-            this.upit2.Location = new System.Drawing.Point(53, 260);
+            this.upit2.Location = new System.Drawing.Point(39, 272);
             this.upit2.Name = "upit2";
             this.upit2.Size = new System.Drawing.Size(119, 52);
             this.upit2.TabIndex = 2;
@@ -76,7 +76,7 @@
             // 
             // upit3
             // 
-            this.upit3.Location = new System.Drawing.Point(53, 361);
+            this.upit3.Location = new System.Drawing.Point(39, 373);
             this.upit3.Name = "upit3";
             this.upit3.Size = new System.Drawing.Size(119, 52);
             this.upit3.TabIndex = 3;
@@ -94,12 +94,15 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(239, 162);
+            this.dataGridView1.Location = new System.Drawing.Point(207, 174);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(304, 251);
+            this.dataGridView1.Size = new System.Drawing.Size(340, 251);
             this.dataGridView1.TabIndex = 4;
             // 
             // Pozoriste
