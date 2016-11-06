@@ -35,6 +35,8 @@
             this.upit2 = new System.Windows.Forms.Button();
             this.upit3 = new System.Windows.Forms.Button();
             this.MyToolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // textLabel
@@ -90,6 +92,16 @@
             this.MyToolTip.IsBalloon = true;
             this.MyToolTip.ReshowDelay = 100;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(239, 162);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(304, 251);
+            this.dataGridView1.TabIndex = 4;
+            // 
             // Pozoriste
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -97,6 +109,7 @@
             this.BackgroundImage = global::Pozoriste.Properties.Resources.stage;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(584, 461);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.upit3);
             this.Controls.Add(this.upit2);
             this.Controls.Add(this.upit1);
@@ -104,6 +117,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Pozoriste";
             this.Text = "Pozoriste";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -115,6 +129,7 @@
         private System.Windows.Forms.Button upit2;
         private System.Windows.Forms.Button upit3;
         private System.Windows.Forms.ToolTip MyToolTip;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 
