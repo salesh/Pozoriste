@@ -51,7 +51,7 @@
             // 
             // upit1
             // 
-            this.upit1.Location = new System.Drawing.Point(52, 142);
+            this.upit1.Location = new System.Drawing.Point(53, 162);
             this.upit1.Name = "upit1";
             this.upit1.Size = new System.Drawing.Size(119, 52);
             this.upit1.TabIndex = 1;
@@ -62,7 +62,7 @@
             // 
             // upit2
             // 
-            this.upit2.Location = new System.Drawing.Point(52, 240);
+            this.upit2.Location = new System.Drawing.Point(53, 260);
             this.upit2.Name = "upit2";
             this.upit2.Size = new System.Drawing.Size(119, 52);
             this.upit2.TabIndex = 2;
@@ -74,7 +74,7 @@
             // 
             // upit3
             // 
-            this.upit3.Location = new System.Drawing.Point(52, 341);
+            this.upit3.Location = new System.Drawing.Point(53, 361);
             this.upit3.Name = "upit3";
             this.upit3.Size = new System.Drawing.Size(119, 52);
             this.upit3.TabIndex = 3;
@@ -88,6 +88,7 @@
             this.MyToolTip.AutoPopDelay = 30000;
             this.MyToolTip.InitialDelay = 0;
             this.MyToolTip.IsBalloon = true;
+            this.MyToolTip.ReshowDelay = 100;
             // 
             // Pozoriste
             // 
