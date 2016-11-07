@@ -144,16 +144,19 @@ namespace Pozoriste
 
         private void Pozoriste_Load(object sender, EventArgs e)
         {
+            //Informacije o aplikaciji
             string copyright, version;
             Assembly asm = Assembly.GetExecutingAssembly();
             copyright = ((AssemblyCopyrightAttribute)asm.GetCustomAttribute(typeof(AssemblyCopyrightAttribute))).Copyright;
             version = ((AssemblyFileVersionAttribute)asm.GetCustomAttribute(typeof(AssemblyFileVersionAttribute))).Version;
             info.Text = copyright + " v" + version;
-
+            
+            //Inicijalna konekcija da bi ubrzala same upite
             using (connection = new SqlConnection(connectionString))
             {
                 connection.Close();
             }
+            
 
         }
     }
