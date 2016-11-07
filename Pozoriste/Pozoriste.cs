@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Configuration;
+using System.Reflection;
 
 namespace Pozoriste
 {
@@ -114,9 +115,20 @@ namespace Pozoriste
                                         "from pom4 p4 join GLUMAC glu " +
                                         "	on p4.idGlumaca = glu.GLUMID ";
             string commandText2 = "select * from PREGLED_GLUMACA";
+            string commandText3 = "DROP VIEW IF EXISTS PREGLED_GLUMACA";
+
             using (connection = new SqlConnection(connectionString))
-            using (SqlDataAdapter adapter = new SqlDataAdapter(commandText1, connection))
+            using (SqlCommand command = new SqlCommand(commandText3, connection))
             {
+                connection.Open();
+                command.ExecuteNonQuery();
+                connection.Close();
+            }
+            using (connection = new SqlConnection(connectionString))
+            using (SqlCommand command = new SqlCommand(commandText1, connection))
+            {
+                connection.Open();
+                command.ExecuteNonQuery();
                 connection.Close();
             }
             using (connection = new SqlConnection(connectionString))
@@ -128,6 +140,21 @@ namespace Pozoriste
                 connection.Close();
             }
            
+        }
+
+        private void Pozoriste_Load(object sender, EventArgs e)
+        {
+            string copyright, version;
+            Assembly asm = Assembly.GetExecutingAssembly();
+            copyright = ((AssemblyCopyrightAttribute)asm.GetCustomAttribute(typeof(AssemblyCopyrightAttribute))).Copyright;
+            version = ((AssemblyFileVersionAttribute)asm.GetCustomAttribute(typeof(AssemblyFileVersionAttribute))).Version;
+            info.Text = copyright + " v" + version;
+
+            using (connection = new SqlConnection(connectionString))
+            {
+                connection.Close();
+            }
+
         }
     }
 }
