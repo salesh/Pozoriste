@@ -134,9 +134,6 @@ Uslov - ucesce glumca u vise od 20 razlicitih predstava kod kojih je
 broj komedija u cijim postavama su bili u sezoni 2009/2010 veci od broja komedija 
 u cijim postavama su bili u sezoni 2008/2009.</value>
   </data>
-  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>126, 17</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

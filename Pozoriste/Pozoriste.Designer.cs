@@ -77,7 +77,8 @@ namespace Pozoriste
             this.upit2.Size = new System.Drawing.Size(119, 52);
             this.upit2.TabIndex = 2;
             this.upit2.Text = "Upit 2";
-            this.toolTip1.SetToolTip(this.upit2, "Prikazuje sifru i naziv predstave koja se u tekucoj godini ");
+            this.toolTip1.SetToolTip(this.upit2, "Prikazuje sifru i naziv predstave koja se u tekucoj godini najvise puta nalazi na" +
+        " repertoaru\r\n ");
             this.upit2.UseVisualStyleBackColor = true;
             this.upit2.Click += new System.EventHandler(this.upit2_Click);
             // 
